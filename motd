@@ -1,0 +1,14 @@
+To create a git repository just execute:
+
+$ git init --bare <repositoryname>.git
+
+
+To delete a repository just remove the git directory with:
+
+$ rm -Rf <repositoryname>.git
+
+
+You can add extra ssh public keys to ~/.ssh/authorized_keys by using ssh-copy-id
+on your own computer or append the public key by executing:
+
+$ echo <public key string> >> ~/.ssh/authorized_keys
